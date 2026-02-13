@@ -1,0 +1,71 @@
+body{
+  background: linear-gradient(to right, rgb(121, 12, 161), blue);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: linear-gradient(to left, #b10193, #7c0d7c);
+  border: 3px solid rgb(171, 89, 51);
+  padding: 20px;
+  width: 300px;
+  height: 450px;
+  margin: 50px auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: rgb(235, 180, 93);
+    -webkit-text-stroke: 0.1px black;
+    margin-bottom: 0px;
+}
+
+.image1{
+    width: 100%;
+   display : block;
+   margin: 0 auto;
+    max-width: 500px;
+    
+ 
+    margin-top: -20%;
+    margin-bottom: -30px;
+    transition: opacity 0.5s ease;
+
+    transition: all 0.5s ease;
+}
+
+#myButton {
+  background-color: #1ccd2b;  
+  color: white;               
+  padding: 12px 25px;      
+  border: 1px solid #120708 ;               
+  border-radius: 4px;         
+  cursor: pointer;           
+  font-family: "Times New Roman", Times, serif;          
+  font-size: 20px;   
+  transition: all 0.2s ease;
+  margin: 10px auto;
+  display: block;
+}
+
+#myButton:active {
+  transform: translateY(2px);
+}
+
+#anim-text {
+  font-size: 28px;
+  font-family: 'Great Vibes', cursive;
+  color: #e3e1e4;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 1s ease;
+  margin-top: 20px;
+}
+
+/* Visible state toggled by script */
+#anim-text.visible {
+  opacity: 1;
+  transform: scale(1);
+}
